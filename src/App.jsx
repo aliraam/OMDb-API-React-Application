@@ -12,7 +12,7 @@ function App() {
           <Header />
         </header>
         <main>
-          <PosterSlider />
+          <PostSlider />
         </main>
         <footer>
           <ThumbSlider />
