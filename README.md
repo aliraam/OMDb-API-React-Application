@@ -9,4 +9,4 @@ OMDb API Video Application
 
 ---------------------
 
-**online demo available on: https://om-db-api-react-application.vercel.app/
+**online demo available on:** https://om-db-api-react-application.vercel.app/
