@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Header, PosterSlider, ThumbSlider } from "./components";
+import { Header, PostSlider, ThumbSlider } from "./components";
 import "./App.scss";
 
 function App() {
