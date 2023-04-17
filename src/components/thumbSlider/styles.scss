@@ -1,21 +1,31 @@
 .thumb-slider {
-    margin: 50px 0 70px;
-    .title {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-    }
+  margin: 40px 0 20px;
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
   }
+}
 
-  .movie-box {
-    width: 100%;
-    .movie-poster {
-      img {
-        border: 2px solid #383b46;
-        border-radius: 8px;
-      }
-    }
-    .movie-title {
-      color: #8d8d8e;
-      margin-top: 5px;
+.movie-box {
+  .movie-poster {
+    img {
+      border: 2px solid #383b46;
+      border-radius: 8px;
     }
   }
+  .movie-title {
+    color: #8d8d8e;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .movie-box {
+    .movie-title {
+      max-height: 40px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size: 0.875rem;
+    }
+  }
+}

@@ -25,17 +25,21 @@ const ThumbSlider = () => {
     <section className="thumb-slider">
       <h2 className="title">Recent Movies</h2>
       <Swiper
-        slidesPerView={6.2}
-        spaceBetween={16}
         breakpoints={{
-          320: {
-            slidesPerView: 2.2,
+          300: {
+            slidesPerView: 4.3,
+            spaceBetween: 12,
           },
           576: {
-            slidesPerView: 3.2,
+            slidesPerView: 4.2,
+            spaceBetween: 16,
           },
           768: {
             slidesPerView: 4.2,
+          },
+          1200: {
+            slidesPerView: 6.2,
+            spaceBetween: 35,
           },
         }}
       >

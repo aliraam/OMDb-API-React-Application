@@ -1,49 +1,53 @@
 .poster-slider {
-    background-color: #0a0e11;
-    border-radius: 6px;
+  background-color: #0a0e11;
+  border-radius: 6px;
+  overflow: hidden;
+  .poster {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    height: 200px;
+  }
+  .poster-title {
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    text-overflow: ellipsis;
     overflow: hidden;
-
-    .poster {
-        display: flex;
-        flex-direction: row-reverse;
-        position: relative;
-        height: 220px;
+    max-height: 36px;
+  }
+  .poster-header {
+    p {
+      color: #d8ba6f;
     }
-
-    .poster-title {
-        color: #fff;
-        font-size: 1.5rem;
-        width: 100%;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-height: 36px;
-    }
-
-    .poster-header {
-        p {
-            color: #d8ba6f;
-        }
-    }
-
-    .poster-overlay {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-grow: 1;
-        padding: 25px 35px;
-        font-size: 0.875rem;
-        font-weight: 300;
-    }
+  }
+  .poster-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 25px 35px;
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
 }
-
-@media screen and (max-width: 576px) {
-    .poster-slider {
-        .poster-overlay {
-            padding: 25px 20px;
-        }
-
-        .poster-title {
-            font-size: 1.25rem;
-        }
+@media screen and (min-width: 1200px) {
+  .poster-slider {
+    .poster {
+      height: 260px;
     }
+  }
+}
+@media screen and (max-width: 576px) {
+  .poster-slider {
+    .poster {
+      height: 160px;
+    }
+    .poster-overlay {
+      padding: 25px;
+    }
+    .poster-title {
+      font-size: 1.25rem;
+    }
+  }
 }
