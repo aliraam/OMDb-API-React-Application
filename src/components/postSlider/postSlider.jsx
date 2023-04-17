@@ -6,7 +6,7 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "./styles.scss";
 
-const PosterSlider = () => {
+const PostSlider = () => {
   const [movies, setMovies] = useState([]);
   const getMovies = () => {
     getTopMovieAPI("a2557d25", "Inception")
@@ -35,4 +35,4 @@ const PosterSlider = () => {
   );
 };
 
-export default PosterSlider;
+export default PostSlider;
