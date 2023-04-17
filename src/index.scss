@@ -1,0 +1,77 @@
+:root {
+  --color-primary: rgb(29, 155, 240);
+  --color-success: rgb(0, 186, 124);
+  --color-success-light: rgba(0, 186, 124, 0.1);
+  --color-pink: rgb(249, 24, 128);
+  --color-danger: rgb(244, 33, 46);
+  --color-pink-light: rgba(249, 24, 128, 0.1);
+  --color-hover-primary: rgb(26, 140, 216);
+  --color-hover-primary-light: rgba(29, 155, 240, 0.1);
+  --color-dark: rgb(15, 20, 25);
+  --color-hover-dark: rgb(39, 44, 48);
+  --color-hover-gray: rgba(15, 20, 25, 0.1);
+  --color-gray-100: rgb(247, 249, 249);
+  --color-gray-200: rgb(239, 243, 244);
+  --color-gray-300: rgb(185, 202, 211);
+  --color-gray-600: rgb(83, 100, 113);
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Falling Sky", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #cbcbcb;
+  text-align: left;
+  background-color: #13161e;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+p,
+h1,
+h2,
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  --gutter-x: 3rem;
+  width: 100%;
+  padding-right: calc(var(--gutter-x) * 0.5);
+  padding-left: calc(var(--gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  --gutter-x: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-0.5 * var(--gutter-x));
+  margin-left: calc(-0.5 * var(--gutter-x));
+  > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--gutter-x) * 0.5);
+    padding-left: calc(var(--gutter-x) * 0.5);
+  }
+}
+.col {
+  flex: 1 0 0%;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.text-right {
+  text-align: right;
+}
